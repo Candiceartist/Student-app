@@ -8,7 +8,9 @@ const React = require('react')
       <div>
         <h1>Gotta Catch them All!</h1>
         <h2>{pokemon.name}</h2>
-       
+        <div>
+        <img src={pokemon.img}/>
+        </div>
       
       </div>
     )
