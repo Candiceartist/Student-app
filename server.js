@@ -10,6 +10,7 @@ const pokemon = require('./models/pokemon.js');
 
 
 
+
 app.get("/", (req,res) => {
     res.send('<h1>Welcome to the Pokemon App!</h1>');
 });
@@ -19,7 +20,7 @@ app.get('/pokemon', (req, res) => {
 });
 
 app.get('/pokemon/:id', (req, res) => {
-    res.send(req.params.id);
+    res.render("Show",{pokemon:pokemon[req.params.id]});
 });
 
 
