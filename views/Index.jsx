@@ -6,11 +6,11 @@ const React = require('react')
     const {pokemon} = this.props;
     return (
       <div>
-        <h1>See All Pokemon</h1>
+        <h1>Showing all students</h1>
         <ul>
             {pokemon.map((poke, i) => {
                 return (
-                    <li>
+                    <li key={i}>
                         {' '}<a href={`/pokemon/${i}`}>{poke.name}</a>
                     </li>
                 )

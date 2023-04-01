@@ -1,17 +1,21 @@
 const React = require('react')
 
-
  class Show extends React.Component {
   render() {
     const {pokemon} = this.props;
     return (
       <div>
-        <h1>Gotta Catch them All!</h1>
-        <h2>{pokemon.name}</h2>
+        <div>
+        <h1>Current Grades</h1>
         <div>
         <img src={pokemon.img}/>
         </div>
-      
+        <div>
+          <h2>Student Name:{pokemon.name}</h2>
+        
+          <h3>Final Grade:{pokemon.grade}</h3>
+        </div>
+      </div>
       </div>
     )
   }
