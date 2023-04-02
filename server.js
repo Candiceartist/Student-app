@@ -18,7 +18,7 @@ app.use(express.urlencoded({extended:false}));
 
 
 app.get("/", (req,res) => {
-    res.send('<h1>Welcome to Glenbrook North highschool!</h1>');
+    res.send('<h1>Welcome to Glenbrook north!</h1>');
 });
 
 app.get('/pokemon', (req, res) => {
@@ -32,10 +32,10 @@ app.get('/pokemon/new',(req,res) => {
 });
 // post to array
 app.post('/pokemon', (req, res) => {
-    if(req.body.requirements === 'on'){ 
-        req.body.requirements = true; 
+    if(req.body.metRequired === 'on'){ 
+        req.body.metRequired = true; 
     } else { 
-        req.body.requirements = false; 
+        req.body.metRequired = false; 
     }
     pokemon.push(req.body);
     console.log(pokemon);

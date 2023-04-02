@@ -1,5 +1,6 @@
 const React = require('react')
 
+
  class Show extends React.Component {
   render() {
     const {pokemon} = this.props;
@@ -14,8 +15,15 @@ const React = require('react')
           <h2>Student Name:{pokemon.name}</h2>
         
           <h3>Final Grade:{pokemon.grade}</h3>
+         {pokemon.metRequired? 'Student meets all required assignments' : 'Student missing required assignments' } 
         </div>
+        
+        
       </div>
+      <br></br>
+      <nav>
+         <a href="/pokemon">Return to Homepage</a>
+      </nav>
       </div>
     )
   }

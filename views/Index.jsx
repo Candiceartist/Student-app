@@ -16,6 +16,9 @@ const React = require('react')
                 )
             })}
         </ul>
+        <nav>
+         <a href="/pokemon/new">Create new student file</a>
+        </nav>
       
       
       </div>
