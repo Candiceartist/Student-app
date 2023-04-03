@@ -1,4 +1,5 @@
-const React = require('react')
+const React = require('react');
+const Update = require('./Update');
 
 
  class Show extends React.Component {
@@ -20,6 +21,7 @@ const React = require('react')
         
         
       </div>
+      <Update></Update>
       <br></br>
       <nav>
          <a href="/pokemon">Return to Homepage</a>

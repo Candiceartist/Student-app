@@ -13,7 +13,7 @@ const React = require('react');
                </form>
                <br></br>
                <nav>
-              <a href="/pokemon">Return to Homepage</a>
+              <a href="/pokemon">Return to Student Archive</a>
               </nav>
            </div>);
        }
